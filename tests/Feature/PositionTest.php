@@ -85,7 +85,7 @@ class PositionTest extends TestCase
         $position->type = 'etf';
         $position->save();
 
-        $sum = Position::getSumByType('dividend');
+        $sum = Position::getSumBySubtype('dividend');
 
         $this->assertEquals(600.00, $sum);
     }

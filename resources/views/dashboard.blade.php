@@ -23,7 +23,10 @@
                     </div>
 
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><h4>${{ $position['average_purchase_price_unit'] }}</h4></li>
+                        <li class="list-group-item">
+                            <h4>${{ $position['average_purchase_price_unit'] }}</h4>
+                            <h5>${{ $position['market_price'] }}</h5>
+                        </li>
                         <li class="list-group-item">
                             ${{ $position['purchase_price_sum'] }} ({{ $position['quantity'] }})
                         </li>

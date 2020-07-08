@@ -38,7 +38,7 @@ class Dividend extends Model
 
         return [
             'dividends'         => $hashMap,
-            'portfolioValue'    => number_format(Position::getSumByType('dividend'), 2, '.', ''),
+            'portfolioValue'    => number_format(Position::getSumBySubtype('dividend'), 2, '.', ''),
             'sumPayout'         => number_format($sumPayout, 2, '.', ''),
             'yield'             => number_format(($sumPayout / $positionData['portfolioValue']) * 100, 2, '.', '')
         ];
